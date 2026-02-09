@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/ztflynn/hifive1-dev/esp32_display/build/CMakeFiles/bootloader
+/home/ztflynn/hifive1-dev/esp32_display/build/CMakeFiles/bootloader.rule
+/home/ztflynn/hifive1-dev/esp32_display/build/CMakeFiles/bootloader-complete.rule
+/home/ztflynn/hifive1-dev/esp32_display/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/ztflynn/hifive1-dev/esp32_display/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/ztflynn/hifive1-dev/esp32_display/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/ztflynn/hifive1-dev/esp32_display/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/ztflynn/hifive1-dev/esp32_display/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/ztflynn/hifive1-dev/esp32_display/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/ztflynn/hifive1-dev/esp32_display/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
