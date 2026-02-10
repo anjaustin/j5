@@ -385,3 +385,17 @@ USB 5V Input
 
 **Document Version:** 1.0  
 **Last Updated:** February 9, 2026
+
+---
+
+## Critical System Configuration (Feb 2026 Update)
+
+### Clock Frequency
+The onboard HFROSC (High Frequency Ring Oscillator) is uncalibrated.
+- **Measured Frequency:** 18.125 MHz
+- **UART Divisor (115200):** 157
+
+### GPIO Initialization
+Bootloader settings may be lost during JTAG debugging. Firmware **must** explicitly configure GPIOs:
+- **UART0:** Enable IOF0 on GPIO 16 & 17
+- **UART1:** Enable IOF0 on GPIO 18 & 23

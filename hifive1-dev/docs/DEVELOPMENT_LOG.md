@@ -422,3 +422,35 @@ hifive1-dev/
 **Session Duration:** ~2 hours
 **Status:** Board fully operational, ready for development
 **Next Milestone:** Successful SD card read operation
+
+---
+
+## Session: February 10, 2026
+
+### Executive Summary
+Resurrected the RISC-V core execution which was blocked by a J-Link firmware regression. Calibrated the system clock to 18.125 MHz and successfully deployed the "RISC-V Guardian" CfC neural network monitor.
+
+### Key Achievements
+1.  **J-Link Resurrection**:
+    - **Issue**: CPU stuck in `halted due to single-step` state; refused to resume.
+    - **Fix**: Downgraded/patched J-Link firmware to Nov 7 2022 version using ARM binaries running via QEMU.
+    - **Outcome**: Full debug control restored.
+
+2.  **Clock Calibration**:
+    - **Issue**: UART output was garbage despite standard 16 MHz settings.
+    - **Fix**: Wrote assembly measurement tool (`test_clock.S`) using RTC `mtime`.
+    - **Result**: Measured actual HFROSC frequency at **18.125 MHz**.
+    - **Action**: Updated UART divisor to **157** (115200 baud).
+
+3.  **GPIO "Silent UART" Fix**:
+    - **Issue**: Correct baud rate but no output.
+    - **Fix**: Discovered `reset halt` leaves GPIOs in Safe Mode (Input). Added initialization code to explicitly enable IOF0 on pins 16, 17, 18, 23.
+
+4.  **RISC-V Guardian Deployment**:
+    - **Status**: Monitor is running on bare metal.
+    - **Function**: Listening for ESP32 telemetry on UART1.
+    - **Output**: Verified "RISC-V Guardian v1.0" banner on console.
+
+### Next Steps
+- Verify physical wiring between ESP32 (GPIO 10) and HiFive1 (GPIO 23).
+- End-to-end integration test.
