@@ -1,0 +1,23 @@
+# Reference directory (cloned for inspiration, not part of this project)
+reflex-reference/
+
+# Global build artifacts
+*.o
+*.elf
+*.bin
+*.hex
+*.lst
+*.map
+*.log
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+
+# ESP32 build
+build/
+sdkconfig.old
+
+# Temporary scripts
+run_*.sh
