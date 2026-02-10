@@ -1,4 +1,4 @@
-# Install script for directory: /home/ztflynn/hifive1-dev/esp32_display/main
+# Install script for directory: /home/ztflynn/j5/hifive1-dev/esp32_display/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,6 +40,6 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/ztflynn/hifive1-dev/esp32_display/build/esp-idf/main/install_local_manifest.txt"
+  file(WRITE "/home/ztflynn/j5/hifive1-dev/esp32_display/build/esp-idf/main/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

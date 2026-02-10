@@ -1,0 +1,15 @@
+# Build artifacts
+build/
+*.o
+*.elf
+*.bin
+*.map
+*.hex
+
+# OpenOCD logs
+*.log
+
+# Editor files
+.vscode/
+.idea/
+*.swp

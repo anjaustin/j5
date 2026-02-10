@@ -1,4 +1,4 @@
-/* * Data converted from /home/ztflynn/hifive1-dev/esp32_display/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from /home/ztflynn/j5/hifive1-dev/esp32_display/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded

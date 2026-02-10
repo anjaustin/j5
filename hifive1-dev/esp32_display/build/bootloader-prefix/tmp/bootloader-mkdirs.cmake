@@ -10,18 +10,18 @@ if(NOT EXISTS "/home/ztflynn/esp-idf/components/bootloader/subproject")
   file(MAKE_DIRECTORY "/home/ztflynn/esp-idf/components/bootloader/subproject")
 endif()
 file(MAKE_DIRECTORY
-  "/home/ztflynn/hifive1-dev/esp32_display/build/bootloader"
-  "/home/ztflynn/hifive1-dev/esp32_display/build/bootloader-prefix"
-  "/home/ztflynn/hifive1-dev/esp32_display/build/bootloader-prefix/tmp"
-  "/home/ztflynn/hifive1-dev/esp32_display/build/bootloader-prefix/src/bootloader-stamp"
-  "/home/ztflynn/hifive1-dev/esp32_display/build/bootloader-prefix/src"
-  "/home/ztflynn/hifive1-dev/esp32_display/build/bootloader-prefix/src/bootloader-stamp"
+  "/home/ztflynn/j5/hifive1-dev/esp32_display/build/bootloader"
+  "/home/ztflynn/j5/hifive1-dev/esp32_display/build/bootloader-prefix"
+  "/home/ztflynn/j5/hifive1-dev/esp32_display/build/bootloader-prefix/tmp"
+  "/home/ztflynn/j5/hifive1-dev/esp32_display/build/bootloader-prefix/src/bootloader-stamp"
+  "/home/ztflynn/j5/hifive1-dev/esp32_display/build/bootloader-prefix/src"
+  "/home/ztflynn/j5/hifive1-dev/esp32_display/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/home/ztflynn/hifive1-dev/esp32_display/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/home/ztflynn/j5/hifive1-dev/esp32_display/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/home/ztflynn/hifive1-dev/esp32_display/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/home/ztflynn/j5/hifive1-dev/esp32_display/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()
